@@ -1,9 +1,5 @@
-<div style="background: darkseagreen; width: 400px; height: 200px;">
-
 <h3>Users List</h3>
 
 <ul>
-  <li *ngFor="let u of users">{{u.Name}}</li>
+  <app-user-form-box *ngFor="let u of users" [user]="u"></app-user-form-box>
 </ul>
-
-</div>

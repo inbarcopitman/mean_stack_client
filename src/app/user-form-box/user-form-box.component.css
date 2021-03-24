@@ -1,0 +1,43 @@
+.user_form_box{
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 10%;
+  margin-bottom: 2px;
+  padding: 20px;
+}
+
+.vertical_form_group{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.inline_form_group{
+  display: flex;
+  align-items: flex-start;
+}
+
+.horizontal_form_group{
+  display: flex;
+}
+
+.horizontal_form_group.space_between{
+  justify-content: space-between;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.action_buttons button{
+  background-color: antiquewhite;
+  margin-left: 1px;
+  margin-right: 1px;
+}
