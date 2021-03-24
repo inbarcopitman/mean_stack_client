@@ -1,7 +1,6 @@
-<div class="user_form_box">
+<div class="user_form_box" [style.border-color]="user.Tasks ? 'red' : 'green'">
   <form>
-
-    <div class="vertical_form_group" >
+    <div class="vertical_form_group">
       <span>ID: {{user._id}}</span>
       <div class="inline_form_group">
         <label for="name">Name:</label>
@@ -12,7 +11,6 @@
         <input type="text" name="email" value="{{user.Email}}">
       </div>
     </div>
-
     <div class="horizontal_form_group space_between">
         <button>Other Data</button>
 
@@ -21,6 +19,5 @@
           <button>Delete</button>
         </div>
     </div>
-
   </form>
 </div>
