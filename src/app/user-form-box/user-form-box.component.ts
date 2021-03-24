@@ -13,4 +13,6 @@ export class UserFormBoxComponent implements OnInit {
   ngOnInit() {
   }
 
+  getOtherData(){
+  }
 }

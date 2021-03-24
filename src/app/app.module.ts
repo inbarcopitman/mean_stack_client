@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { UserslistComponent } from './userslist/userslist.component';
 import { UserFormBoxComponent } from './user-form-box/user-form-box.component';
+import { UserDataBoxComponent } from './user-data-box/user-data-box.component';
+import { InputGroupComponent } from './input-group/input-group.component';
 
 const appRoutes : Routes = [
   { path : "users" , component : UserslistComponent}
@@ -21,7 +23,9 @@ const appRoutes : Routes = [
     AppComponent,
     MainpageComponent,
     UserslistComponent,
-    UserFormBoxComponent
+    UserFormBoxComponent,
+    UserDataBoxComponent,
+    InputGroupComponent
   ],
   imports: [
     BrowserModule,

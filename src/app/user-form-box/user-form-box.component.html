@@ -12,7 +12,9 @@
       </div>
     </div>
     <div class="horizontal_form_group space_between">
-        <button>Other Data</button>
+        <button (mouseover)="getOtherData()">Other Data</button>
+
+        <app-user-data-box [user]="user"></app-user-data-box>
 
         <div class="horizontal_form_group action_buttons">
           <button>Update</button>
