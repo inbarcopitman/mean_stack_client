@@ -8,11 +8,13 @@ import {Users} from "../users";
 })
 export class UserFormBoxComponent implements OnInit {
   @Input() user: Users;
-  constructor() { }
+
+  showUserData: boolean;
+  constructor() {
+    this.showUserData = false;
+  }
 
   ngOnInit() {
   }
 
-  getOtherData(){
-  }
 }
