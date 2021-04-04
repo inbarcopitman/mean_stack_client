@@ -1,0 +1,45 @@
+.user_form_box{
+  width: 300px;
+  min-height: 150px;
+  border: 1px solid black;
+  border-radius: 10%;
+  margin-bottom: 2px;
+  padding: 20px;
+}
+
+.horizontal_form_group{
+  display: flex;
+}
+
+.horizontal_form_group.space_between{
+  justify-content: space-between;
+}
+
+form{
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.action_buttons button{
+  background-color: antiquewhite;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.action_buttons{
+  display: inline-block;
+}
+
+.push_right{
+  position: static;
+}
+
+.actions_section{
+  position: relative;
+}
+
+.actions_section button{
+  height: 30px;
+}

@@ -1,0 +1,4 @@
+.inline_form_group{
+  display: flex;
+  align-items: flex-start;
+}

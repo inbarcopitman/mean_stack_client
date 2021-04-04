@@ -1,0 +1,19 @@
+<div class="user_form_box" [style.border-color]="user.Tasks ? 'red' : 'green'">
+  <form>
+    <div class="vertical_form_group mb_10">
+      <span>ID: {{user._id}}</span>
+      <app-input-group value="{{user.Name}}" name="name" type="text" label="Name"></app-input-group>
+      <app-input-group value="{{user.Email}}" name="email" type="email" label="Email"></app-input-group>
+    </div>
+    <div class="actions_section">
+        <button (mouseover)="showUserData=true">Other Data</button>
+
+        <app-user-data-box *ngIf="showUserData" [user]="user" (click)="showUserData=false"></app-user-data-box>
+
+        <div class="action_buttons push_right">
+          <button>Update</button>
+          <button>Delete</button>
+        </div>
+    </div>
+  </form>
+</div>
