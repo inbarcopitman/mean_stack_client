@@ -13,6 +13,7 @@ import { UserslistComponent } from './userslist/userslist.component';
 import { UserFormBoxComponent } from './user-form-box/user-form-box.component';
 import { UserDataBoxComponent } from './user-data-box/user-data-box.component';
 import { InputGroupComponent } from './input-group/input-group.component';
+import { UsersFilterPipe } from './users-filter.pipe';
 
 const appRoutes : Routes = [
   { path : "users" , component : UserslistComponent}
@@ -25,7 +26,8 @@ const appRoutes : Routes = [
     UserslistComponent,
     UserFormBoxComponent,
     UserDataBoxComponent,
-    InputGroupComponent
+    InputGroupComponent,
+    UsersFilterPipe
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ export class UserslistComponent implements OnInit {
   sub : Subscription;
   users : Users[] = [];
   color : string[] = ["red","green"];
+  UsersFilterInput = '';
 
   constructor(private utils : UsersUtilsService) { }
 

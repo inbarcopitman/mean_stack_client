@@ -1,5 +1,6 @@
 <h3>Users List</h3>
 
+<input type="search" [(ngModel)] = UsersFilterInput>
 <ul>
-  <app-user-form-box *ngFor="let u of users" [user]="u"></app-user-form-box>
+  <app-user-form-box *ngFor="let u of users | usersFilter: UsersFilterInput" [user]="u"></app-user-form-box>
 </ul>
