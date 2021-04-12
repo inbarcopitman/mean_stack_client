@@ -14,6 +14,10 @@ export class UserFormBoxComponent implements OnInit {
     this.showUserData = false;
   }
 
+  updateData(){
+    alert("It works... ");
+  }
+
   ngOnInit() {
   }
 

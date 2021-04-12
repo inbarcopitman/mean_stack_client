@@ -11,7 +11,7 @@
         <app-user-data-box *ngIf="showUserData" [user]="user" (click)="showUserData=false"></app-user-data-box>
 
         <div class="action_buttons push_right">
-          <button>Update</button>
+          <button (click)="updateData()">Update</button>
           <button>Delete</button>
         </div>
     </div>
