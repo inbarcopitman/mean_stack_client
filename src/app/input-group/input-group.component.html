@@ -1,4 +1,4 @@
 <div class="inline_form_group">
   <label :for="{{name}}">{{label}}:</label>
-  <input type="{{type}}" name="{{name}}" value="{{value}}">
+  <input type="{{type}}" name="{{name}}" value="{{value}}" [(ngModel)]="inputModel" (ngModelChange)="inputModelChange.emit(inputModel)">
 </div>

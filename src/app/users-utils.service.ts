@@ -14,5 +14,10 @@ getAllUsers()
    return  this.http.get<Users[]>("http://localhost:8000/api/users/")
   }
 
+  updateUser(data)
+  {
+    return  this.http.put<Users[]>("http://localhost:8000/api/users/", {id: data.id, data: data});
+  }
+
 }
 

@@ -1,5 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Users} from "../users";
+import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
+import {UsersUtilsService} from "../users-utils.service";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-user-form-box',
@@ -8,17 +11,27 @@ import {Users} from "../users";
 })
 export class UserFormBoxComponent implements OnInit {
   @Input() user: Users;
+  sub : Subscription;
+
+  private updateForm: FormGroup;
 
   showUserData: boolean;
-  constructor() {
+
+  constructor(private fb: FormBuilder, private utils : UsersUtilsService) {
     this.showUserData = false;
   }
 
-  updateData(){
-    alert("It works... ");
+  ngOnInit() {
+    this.updateForm = new FormGroup({
+      Name: new FormControl(),
+      Email: new FormControl(),
+    });
   }
 
-  ngOnInit() {
+  updateData(data){
+    this.sub = this.utils.updateUser()
+      .subscribe(data => data);
   }
+
 
 }

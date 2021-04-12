@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-input-group',
@@ -6,6 +6,9 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./input-group.component.css']
 })
 export class InputGroupComponent implements OnInit {
+  @Input() inputModel: string;
+  @Output() inputModelChange = new EventEmitter<string>();
+
   @Input() name: String;
   @Input() label: String;
   @Input() type: String;
